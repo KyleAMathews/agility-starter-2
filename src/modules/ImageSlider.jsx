@@ -1,10 +1,8 @@
-
 //[Not Implemented]
 //This file serves an example of a basic implementation of an 'Image Slider' module - this module does not exist in the current Blog Template
 
 // import React from 'react';
 // import { graphql, StaticQuery } from 'gatsby'
-
 
 // export default (props) => (
 // 	<StaticQuery
@@ -26,7 +24,7 @@
 //                     }
 //                 }
 //             }
-//         }              
+//         }
 //         `}
 // 		render={queryData => {
 //             const thisModuleInstance = queryData.allAgilityImageSlider.nodes.filter(
@@ -57,4 +55,3 @@
 // const Slide = ({slide}) => {
 //     return <img src={slide.customFields.image.url} alt={slide.customFields.image.label} />
 // }
-

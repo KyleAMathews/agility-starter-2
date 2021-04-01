@@ -6,7 +6,7 @@ import truncate from "truncate-html"
 import "./PostListing.css"
 import Img from "gatsby-image"
 
-export default (props) => (
+export default props => (
   <StaticQuery
     query={graphql`
       query PostListingModuleQuery {
@@ -38,7 +38,7 @@ export default (props) => (
         }
       }
     `}
-    render={(queryData) => {
+    render={queryData => {
       return <PostsListing posts={queryData.allAgilityPost.nodes} {...props} />
     }}
   />
@@ -58,7 +58,7 @@ const PostsListing = ({ item, posts }) => {
 }
 
 const Posts = ({ posts }) => {
-  return posts.map((post) => {
+  return posts.map(post => {
     return <Post key={post.contentID} post={post} />
   })
 }
